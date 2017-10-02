@@ -1,3 +1,9 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =1
+let g:netrw_dirhist_cnt =7
 let g:netrw_dirhist_1='/home/coru/.vim'
+let g:netrw_dirhist_2='/home/coru/Documents/data/dev/transdev/citest/dataset_indexer/app'
+let g:netrw_dirhist_3='/home/coru/Documents/data/dev/transdev/citest/dataset_indexer'
+let g:netrw_dirhist_4='/home/coru/Documents/data/dev/transdev/citest'
+let g:netrw_dirhist_5='/home/coru/Documents/data/dev/transdev/citest/image_and_lidar_extraction'
+let g:netrw_dirhist_6='/home/coru/Documents/data/dev/transdev/citest/dataset_indexer'
+let g:netrw_dirhist_7='/home/coru/Documents/data/dev/transdev/citest'
