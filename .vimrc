@@ -73,8 +73,10 @@ set confirm
 set cmdheight=2
 set notimeout ttimeout ttimeoutlen=200
 let mapleader=","
+"code folding
 nnoremap <space> za
-set foldmethod=indent
+autocmd Syntax c,cpp,vim,xml,html,xhtml setlocal foldmethod=syntax
+
 nnoremap <leader>s :mksession!<CR>
 
 set ruler
@@ -97,7 +99,7 @@ map <Leader>vp :VimuxPromptCommand<CR>
  Plugin 'majutsushi/tagbar'
 nmap <F8> :TagbarToggle<CR>
 
- set autochdir
+ "set autochdir
  " set tags to .tags file
  set tags=.tags;
 
@@ -108,14 +110,14 @@ nmap <F8> :TagbarToggle<CR>
  Plugin 'scrooloose/syntastic'
 
  " Syntastic recommended settings
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
+"set statusline+=%#warningmsg#
+"set statusline+=%{SyntasticStatuslineFlag()}
+"set statusline+=%*
+"
+"let g:syntastic_always_populate_loc_list = 1
+"let g:syntastic_auto_loc_list = 1
+"let g:syntastic_check_on_open = 1
+"let g:syntastic_check_on_wq = 0
 
 "Vim-airline
 Plugin 'vim-airline/vim-airline'
