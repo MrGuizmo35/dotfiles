@@ -54,6 +54,7 @@ set background=dark
 colorscheme badwolf
 set tabstop=4
 set softtabstop=4
+set shiftwidth=4
 set expandtab
 set showcmd
 set cursorline
@@ -110,17 +111,25 @@ nmap <F8> :TagbarToggle<CR>
  Plugin 'scrooloose/syntastic'
 
  " Syntastic recommended settings
-"set statusline+=%#warningmsg#
-"set statusline+=%{SyntasticStatuslineFlag()}
-"set statusline+=%*
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
 "
-"let g:syntastic_always_populate_loc_list = 1
-"let g:syntastic_auto_loc_list = 1
-"let g:syntastic_check_on_open = 1
-"let g:syntastic_check_on_wq = 0
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 
 "Vim-airline
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+"Nerdtree
 Plugin 'scrooloose/nerdtree'
+nmap <F5> :NERDTreeToggle<CR>
+"CTRLP
 Plugin 'kien/ctrlp.vim'
+
+set colorcolumn=81
+
+:set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:.
+:set list
