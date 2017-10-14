@@ -114,3 +114,4 @@ Plugin 'scrooloose/nerdtree'
 nmap <F5> :NERDTreeToggle<CR>
 Plugin 'kien/ctrlp.vim'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'rdnetto/YCM-Generator'
