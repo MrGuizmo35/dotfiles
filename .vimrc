@@ -31,9 +31,10 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
+Plugin 'sjl/badwolf'
 """"""""""""""""""""""""""""""""""""""""""""""""
 
-Plugin 'altercation/vim-colors-solarized'
+"Plugin 'altercation/vim-colors-solarized'
 syntax enable
 set autoindent
 set number
@@ -121,6 +122,3 @@ set colorcolumn=81
 
 :set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:.
 :set list
-
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'rdnetto/YCM-Generator'
