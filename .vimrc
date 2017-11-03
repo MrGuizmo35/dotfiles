@@ -36,10 +36,9 @@ Plugin 'sjl/badwolf'
 
 "Plugin 'altercation/vim-colors-solarized'
 syntax enable
-set autoindent
 set number
 set relativenumber
-set background=dark
+"set background=dark
 colorscheme badwolf
 set tabstop=4
 set softtabstop=4
@@ -47,6 +46,7 @@ set shiftwidth=4
 set expandtab
 set showcmd
 set cursorline
+set autoindent
 filetype indent plugin on
 set hidden
 set wildmenu
@@ -109,9 +109,6 @@ Plugin 'scrooloose/syntastic'
 "let g:syntastic_check_on_open = 1
 "let g:syntastic_check_on_wq = 0
 
-"Vim-airline
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
 "Nerdtree
 Plugin 'scrooloose/nerdtree'
 nmap <F5> :NERDTreeToggle<CR>
@@ -120,5 +117,22 @@ Plugin 'kien/ctrlp.vim'
 
 set colorcolumn=81
 
-:set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:.
-:set list
+Plugin 'luochen1990/rainbow'
+let g:rainbow_active=1
+
+Plugin 'Yggdroot/indentLine'
+let g:indentLine_showFirstIndentLevel = 1
+
+set encoding=utf-8
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+let g:airline_powerline_fonts = 1
+
+"clang completion
+let g:clang_library_path='/usr/lib/llvm-3.8/lib/libclang.so.1'
+
+"dealing with caracter pairs
+Plugin 'vim-scripts/AutoClose'
+Plugin 'tpope/vim-surround'
+
+
